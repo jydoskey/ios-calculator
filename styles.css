@@ -3,13 +3,13 @@
   width: 30%;
   height: auto;
   margin: 4rem auto;
-  color: white;
 }
 
 button {
   height: 5.5rem;
   border: none;
   opacity: 0.8;
+  font-size: 24px;
 }
 
 button:hover {
@@ -24,11 +24,13 @@ button:hover {
 .btn-orange {
   width: 24.5%;
   opacity: 0.85;
+  color: white;
   background-color: rgb(212, 148, 28);
 }
 
 .btn-grey {
   width:24.5%;
   opacity: 0.8;
+  color: black;
   background-color: #efefef;
 }
