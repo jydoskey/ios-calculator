@@ -1,0 +1,12 @@
+
+.calculator-content {
+  background: black;
+  width: 30%;
+  height: auto;
+  margin: 4rem auto;
+  color: white;
+}
+
+button {
+  height: 3rem;
+}
