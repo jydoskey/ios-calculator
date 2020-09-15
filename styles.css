@@ -1,4 +1,3 @@
-
 .calculator-content {
   background: black;
   width: 30%;
@@ -8,5 +7,28 @@
 }
 
 button {
-  height: 3rem;
+  height: 5.5rem;
+  border: none;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.display {
+  height: 5.5rem;
+}
+
+.btn-orange {
+  width: 24.5%;
+  opacity: 0.85;
+  background-color: rgb(212, 148, 28);
+}
+
+.btn-grey {
+  width:24.5%;
+  opacity: 0.8;
+  background-color: #efefef;
 }
