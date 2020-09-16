@@ -19,6 +19,9 @@ button:hover {
 
 .display {
   height: 5.5rem;
+  color: white;
+  align-items: center;
+  font-size: 30px;
 }
 
 .btn-orange {
