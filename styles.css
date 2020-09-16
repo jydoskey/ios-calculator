@@ -32,6 +32,7 @@ button:hover {
 span {
   position: absolute;
   right: 0;
+  padding-right: 0.7rem;
 }
 
 .btn-orange {
