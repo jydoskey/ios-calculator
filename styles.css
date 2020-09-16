@@ -26,10 +26,12 @@ button:hover {
   color: white;
   align-items: center;
   font-size: 30px;
+  position: relative;
 }
 
 span {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 .btn-orange {
