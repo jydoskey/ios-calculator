@@ -1,6 +1,10 @@
+.calculator {
+  margin: 0 auto;
+}
+
 .calculator-content {
   background: black;
-  width: 30%;
+  width: 23rem;
   height: auto;
   margin: 4rem auto;
 }
@@ -22,6 +26,10 @@ button:hover {
   color: white;
   align-items: center;
   font-size: 30px;
+}
+
+span {
+  float: right;
 }
 
 .btn-orange {
