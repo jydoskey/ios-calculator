@@ -2,6 +2,11 @@
   margin: 0 auto;
 }
 
+.calculator-screen {
+  background-color: black;
+  color: white;
+}
+
 .calculator-content {
   background: black;
   width: 23rem;
