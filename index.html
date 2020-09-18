@@ -13,35 +13,34 @@
 
 <body class="calculator">
   <div id="calculator-content" class="calculator-content container">
-    <div class="row display">
-      <!-- <span class="calculator-screen" id="edu">0</span> -->
-      <input class="calculator-screen" type="text" id="edu"/>
+    <div class="row calculateplay">
+      <input class="calculator-screen" type="text" id="display"/>
     </div>
     <div class="row justify-content-between mb-1">
       <button class="keys" style="width:49.5%;" value="c" onclick="clr()">C</button>
-      <button class="btn-grey keys" value="/" onclick="dis('/')">/</button>
-      <button class="btn-orange keys" value="del" onclick="dis('del')">&#8592;</button>
+      <button class="btn-grey keys" value="/" onclick="calculate('/')">/</button>
+      <button class="btn-orange keys" value="del" onclick="calculate('del')">&#8592;</button>
     </div>
     <div class="row justify-content-between mb-1">
-      <button class="btn-grey" value="7" onclick="dis('7')">7</button>
-      <button class="btn-grey" value="8" onclick="dis('8')">8</button>
-      <button class="btn-grey" value="9" onclick="dis('9')">9</button>
-      <button class="btn-orange keys" value="*" onclick="dis('*')">x</button>
+      <button class="btn-grey" value="7" onclick="calculate('7')">7</button>
+      <button class="btn-grey" value="8" onclick="calculate('8')">8</button>
+      <button class="btn-grey" value="9" onclick="calculate('9')">9</button>
+      <button class="btn-orange keys" value="*" onclick="calculate('*')">x</button>
     </div>
     <div class="row justify-content-between mb-1">
-      <button class="btn-grey" value="4" onclick="dis('4')">4</button>
-      <button class="btn-grey" value="5" onclick="dis('5')">5</button>
-      <button class="btn-grey" value="6" onclick="dis('6')">6</button>
-      <button class="btn-orange keys" value="-" onclick="dis('-')">-</button>
+      <button class="btn-grey" value="4" onclick="calculate('4')">4</button>
+      <button class="btn-grey" value="5" onclick="calculate('5')">5</button>
+      <button class="btn-grey" value="6" onclick="calculate('6')">6</button>
+      <button class="btn-orange keys" value="-" onclick="calculate('-')">-</button>
     </div>
     <div class="row justify-content-between mb-1">
-      <button class="btn-grey" value="1" onclick="dis('1')">1</button>
-      <button class="btn-grey" value="2" onclick="dis('2')">2</button>
-      <button class="btn-grey" value="3" onclick="dis('3')">3</button>
-      <button class="btn-orange keys" value="+" onclick="dis('+')">+</button>
+      <button class="btn-grey" value="1" onclick="calculate('1')">1</button>
+      <button class="btn-grey" value="2" onclick="calculate('2')">2</button>
+      <button class="btn-grey" value="3" onclick="calculate('3')">3</button>
+      <button class="btn-orange keys" value="+" onclick="calculate('+')">+</button>
     </div>
     <div class="row justify-content-between">
-      <button style="width:74.5%;" value="0" onclick="dis('0')">0</button>
+      <button style="width:74.5%;" value="0" onclick="calculate('0')">0</button>
       <button class="btn-orange keys" value="=" onclick="solve()">=</button>
     </div>
   </div>
