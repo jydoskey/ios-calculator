@@ -7,40 +7,42 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
   <title>IOS Calculator</title>
 </head>
 
 <body class="calculator">
-  <div class="container calculator-content">
+  <div id="calculator-content" class="calculator-content container">
     <div class="row display">
-      <span>0</span>
+      <!-- <span class="calculator-screen" id="edu">0</span> -->
+      <input class="calculator-screen" type="text" id="edu"/>
     </div>
     <div class="row justify-content-between mb-1">
-      <button style="width:49.5%;">C</button>
-      <button class="btn-grey">&#247;</button>
-      <button class="btn-orange">&#8592;</button>
+      <button class="keys" style="width:49.5%;" value="c" onclick="clr()">C</button>
+      <button class="btn-grey keys" value="/" onclick="dis('/')">/</button>
+      <button class="btn-orange keys" value="del" onclick="dis('del')">&#8592;</button>
     </div>
     <div class="row justify-content-between mb-1">
-      <button class="btn-grey">7</button>
-      <button class="btn-grey">8</button>
-      <button class="btn-grey">9</button>
-      <button class="btn-orange">x</button>
+      <button class="btn-grey" value="7" onclick="dis('7')">7</button>
+      <button class="btn-grey" value="8" onclick="dis('8')">8</button>
+      <button class="btn-grey" value="9" onclick="dis('9')">9</button>
+      <button class="btn-orange keys" value="*" onclick="dis('*')">x</button>
     </div>
     <div class="row justify-content-between mb-1">
-      <button class="btn-grey">4</button>
-      <button class="btn-grey">5</button>
-      <button class="btn-grey">6</button>
-      <button class="btn-orange">-</button>
+      <button class="btn-grey" value="4" onclick="dis('4')">4</button>
+      <button class="btn-grey" value="5" onclick="dis('5')">5</button>
+      <button class="btn-grey" value="6" onclick="dis('6')">6</button>
+      <button class="btn-orange keys" value="-" onclick="dis('-')">-</button>
     </div>
     <div class="row justify-content-between mb-1">
-      <button class="btn-grey">1</button>
-      <button class="btn-grey">2</button>
-      <button class="btn-grey">3</button>
-      <button class="btn-orange">&#43;</button>
+      <button class="btn-grey" value="1" onclick="dis('1')">1</button>
+      <button class="btn-grey" value="2" onclick="dis('2')">2</button>
+      <button class="btn-grey" value="3" onclick="dis('3')">3</button>
+      <button class="btn-orange keys" value="+" onclick="dis('+')">+</button>
     </div>
     <div class="row justify-content-between">
-      <button style="width:74.5%;">0</button>
-      <button class="btn-orange">=</button>
+      <button style="width:74.5%;" value="0" onclick="dis('0')">0</button>
+      <button class="btn-orange keys" value="=" onclick="solve()">=</button>
     </div>
   </div>
 </body>
