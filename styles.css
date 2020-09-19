@@ -2,6 +2,7 @@
   margin: 0 auto;
 }
 
+
 .calculator-screen {
   background-color: black;
   color: white;
@@ -21,23 +22,44 @@ button {
   font-size: 24px;
 }
 
+::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
 button:hover {
   opacity: 1;
   transition: 0.3s;
 }
 
-.display {
+.calculator-display {
   height: 5.5rem;
   color: white;
-  align-items: center;
   font-size: 30px;
   position: relative;
-}
-
-span {
-  position: absolute;
+  text-align: right;
+  border-color: black;
   right: 0;
   padding-right: 0.7rem;
+  border: 0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  text-align: right;
 }
 
 .btn-orange {
@@ -48,7 +70,7 @@ span {
 }
 
 .btn-grey {
-  width:24.5%;
+  width: 24.5%;
   opacity: 0.8;
   color: black;
   background-color: #efefef;
