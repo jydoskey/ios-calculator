@@ -13,13 +13,13 @@
 
 <body class="calculator">
   <div id="calculator-content" class="calculator-content container">
-    <div class="row calculateplay">
-      <input class="calculator-screen" type="text" id="display"/>
+    <div class="row calculator-display">
+      <input class="calculator-screen text-white" placeholder="0" type="text" id="display" />
     </div>
     <div class="row justify-content-between mb-1">
       <button class="keys" style="width:49.5%;" value="c" onclick="clr()">C</button>
       <button class="btn-grey keys" value="/" onclick="calculate('/')">/</button>
-      <button class="btn-orange keys" value="del" onclick="calculate('del')">&#8592;</button>
+      <button class="btn-orange keys" value="del" onclick="del()">&#8592;</button>
     </div>
     <div class="row justify-content-between mb-1">
       <button class="btn-grey" value="7" onclick="calculate('7')">7</button>
